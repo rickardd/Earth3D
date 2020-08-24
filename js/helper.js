@@ -52,7 +52,7 @@ export const createEarthCloud = function () {
         map: new THREE.Texture(canvasResult),
         side: THREE.DoubleSide,
         transparent: true,
-        opacity: 0.4,
+        opacity: 0.9,
     })
     var mesh = new THREE.Mesh(geometry, material)
     return mesh

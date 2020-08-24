@@ -79,7 +79,7 @@ Promise.all([baseTexturePromise, bumpTexturePromise, specularityTexturePromise, 
     .then(([baseTexture, bumpTexture, specularityTexture, galaxyTexture]) => {
         material.map = baseTexture;
         material.bumpMap = bumpTexture;
-        material.bumpScale = 0.03;
+        material.bumpScale = 0.05;
         material.specularMap = specularityTexture;
         material.specular = new THREE.Color('grey');
 
@@ -105,7 +105,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 function animate() {
     requestAnimationFrame(animate);
 
-    cloudMesh.rotateY(1 / 800)
+    // cloudMesh.rotateY(1 / 800)
     earthMesh.rotation.y += 1 / 1000
 
     controls.update();
