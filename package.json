@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "serve": "^11.3.0",
-    "three": "^0.115.0"
+    "three": "^0.125.0"
   }
 }
